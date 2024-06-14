@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- my css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/works.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500&family=Sora:wght@100;400;600;800&display=swap"
+        rel="stylesheet">
+    <script>console.log("動作○");</script>
+</head>
+
+<body id="window_size">
+    <header>
+        <div class="header_inner">
+            <h1>
+                <a href="index.html">Nakahara Ryoya</a>
+            </h1>
+            <nav class="header_nav">
+                <ul>
+                    <li><a href="index.html">Top</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <section>
+        <div class="works_inner">
+            <div class="scroll_line"></div>
+            <h2 class="works_title">Works</h2>
+            <ul>
+                <li>
+                    <button class="modal_open" id="modal_open_1" data-modal-open="modal_1"><img src="img/pf_1.jpg"
+                            alt="ポートフォリオ_1"></button>
+                    <div class="modal" id="modal_1" data-modal="modal_1">
+                        <div class="modal_content">
+                            <div class="modal_title">
+                                <div class="modal_img">
+                                    <img src="img/pf_1.jpg" alt="ポートフォリオ_1">
+                                    <span class="close_btn" id="close_btn_1">&times;</span>
+                                </div>
+                                <h3>鰻LINEスタンプ</h3>
+                            </div>
+
+                            <div class="modal_detail">
+                                <p>制作期間 : 一週間未満</p>
+                                <p class="modal_done_lists">
+                                    <span>ディレクション</span>
+                                    <span>デザイン</span>
+                                </p>
+                                <span class="modal_border"></span>
+                                <p class="modal_use_softwares">
+                                    <span>Illustrator</span>
+                                </p>
+                                <p class="modal_text">
+                                    鰻屋さんで働いていた事がきっかけで作成しました。
+                                </p>
+                                <button type="button" class="modal_link_btn"
+                                    onclick="location.href='https://store.line.me/stickershop/product/14226526/ja'"
+                                    target="_blank" rel="noopenr noreferrer">
+                                    Link
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <button class="modal_open" id="modal_open_2" data-modalOpen="modal_2"><img src="img/pf_2.jpg"
+                            alt="ポートフォリオ_2"></button>
+                    <div class="modal" id="modal_2" data-modal="modal_2">
+                        <div class="modal_content">
+                            <div class="modal_title">
+                                <div class="modal_img">
+                                    <img src="img/pf_2.jpg" alt="ポートフォリオ_2">
+                                    <span class="close_btn" id="close_btn_2">&times;</span>
+                                </div>
+                                <h3>バナー作品</h3>
+                            </div>
+
+                            <div class="modal_detail">
+                                <p>制作期間 : 一週間未満</p>
+                                <p class="modal_done_lists">
+                                    <span>バナー制作</span>
+                                    <span>コーディンング</span>
+                                </p>
+                                <span class="modal_border"></span>
+                                <p class="modal_use_softwares">
+                                    <span>Photoshop</span>
+                                    <span>Illustrator</span>
+                                    <span>HTML5/CSS3</span>
+                                    <span>Javascript</span>
+                                </p>
+                                <p class="modal_text">
+                                    作成したバナーやチラシの一部
+                                </p>
+                                <button type="button" class="modal_link_btn"
+                                    onclick="window.open('../bnr/index.html', '_blank', 'noopener,noreferrer')">
+                                    Link
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <button class="modal_open" id="modal_open_3" data-modalOpen="modal_3"><img src="img/pf_3.jpg"
+                            alt="ポートフォリオ_3"></button>
+                    <div class="modal" id="modal_3" data-modal="modal_3">
+                        <div class="modal_content">
+                            <div class="modal_title">
+                                <div class="modal_img">
+                                    <img src="img/pf_3.jpg" alt="ポートフォリオ_3">
+                                    <span class="close_btn" id="close_btn_3">&times;</span>
+                                </div>
+                                <h3>sunday flower</h3>
+                            </div>
+
+                            <div class="modal_detail">
+                                <p>制作期間 : 2週間未満</p>
+                                <p class="modal_done_lists">
+                                    <span>ディレクション</span>
+                                    <span>デザイン</span>
+                                    <span>コーディング</span>
+                                </p>
+                                <span class="modal_border"></span>
+                                <p class="modal_use_softwares">
+                                    <span>Photoshop</span>
+                                    <span>Illustrator</span>
+                                    <span>HTML5/CSS3</span>
+                                    <span>Javascript/JQuery</span>
+                                    <span>PHP</span>
+                                </p>
+                                <p class="modal_text">
+                                    授業で学んだ事を復習するつもりで作成しました。まとまった雰囲気を出しつつもアットホームな雰囲気を出すために、シンプルかつ、英語は使用せず柔らかい雰囲気を意識しました。<br>
+                                    お花屋さんのサイトはECに近い物とオシャレに偏ったものが多くみられましたが、オシャレなサイトはハードルや意識の高さを感じたため、「about-当店について-」といった同じ意味の言葉を並べる装飾は避けました。<br>
+                                    商品のページはCSSのアニメーションを使用してみたくて実装しましたが、ユーザビリティやデザイン的には実装しない方がいいと感じています。
+                                </p>
+                                <button type="button" class="modal_link_btn"
+                                    onclick="window.open('../sunday_flower/index.html', '_blank', 'noopener,noreferrer')">
+                                    Link
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <button class="modal_open" id="modal_open_4" data-modalOpen="modal_4"><img src="img/pf_4.jpg"
+                            alt="ポートフォリオ_4"></button>
+                    <div class="modal" id="modal_4" data-modal="modal_4">
+                        <div class="modal_content">
+                            <div class="modal_title">
+                                <div class="modal_img">
+                                    <img src="img/pf_4.jpg" alt="ポートフォリオ_4">
+                                    <span class="close_btn" id="close_btn_4">&times;</span>
+                                </div>
+                                <h3>おみく島</h3>
+                            </div>
+
+                            <div class="modal_detail">
+                                <p>制作期間 : 一週間未満</p>
+                                <p class="modal_done_lists">
+                                    <span>デザイン</span>
+                                    <span>コーディング</span>
+                                </p>
+                                <span class="modal_border"></span>
+                                <p class="modal_use_softwares">
+                                    <span>HTML5/CSS3</span>
+                                    <span>Javascript</span>
+                                </p>
+                                <p class="modal_text">
+                                    Javascriptの練習として作成しました。
+                                    リファクタリングがで出来るであろう箇所はまだまだ見受けられ粗はありますが、多次元配列や条件分岐等の練習になったと感じています。
+                                </p>
+                                <button type="button" class="modal_link_btn"
+                                    onclick="window.open('../omikujima/index.html', '_blank', 'noopener,noreferrer')">
+                                    Link
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <button class="modal_open" id="modal_open_5" data-modalOpen="modal_5"><img src="img/pf_5.jpg"
+                            alt="ポートフォリオ_5"></button>
+                    <div class="modal" id="modal_5" data-modal="modal_5">
+                        <div class="modal_content">
+                            <div class="modal_title">
+                                <div class="modal_img">
+                                    <img src="img/pf_5.jpg" alt="ポートフォリオ_5">
+                                    <span class="close_btn" id="close_btn_5">&times;</span>
+                                </div>
+                                <h3>映画の公式サイト風ページ</h3>
+                            </div>
+
+                            <div class="modal_detail">
+                                <p>制作期間 : 2週間未満</p>
+                                <p class="modal_done_lists">
+                                    <span>ディレクション</span>
+                                    <span>デザイン</span>
+                                </p>
+                                <span class="modal_border"></span>
+                                <p class="modal_use_softwares">
+                                    <span>Photoshop</span>
+                                    <span>Illustrator</span>
+                                    <span>XD</span>
+                                    <span>Premier Pro</span>
+                                    <span>HTML5/CSS3</span>
+                                </p>
+                                <p class="modal_text">
+                                    トップページのみ。<br>
+                                    以前自作したパロディ予告動画や画像がありました。
+                                    職業訓練でWeb制作を学んでいるうちに、サイトもあった方が面白なと思い友人に見せるため作成しました。
+                                </p>
+                                <button type="button" class="modal_link_btn"
+                                    onclick="window.open('../deyene/index.html', '_blank', 'noopener,noreferrer')">
+                                    Link
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </li>
+
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
