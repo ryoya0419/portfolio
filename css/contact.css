@@ -1,0 +1,213 @@
+@charset "utf-8";
+
+/*===============
+.header_inner
+===============*/
+
+.header_inner {
+    margin-bottom: var(--gutter_main_sp);
+}
+
+h1 {
+    text-align: left;
+    margin: var(--gutter_main_sp) var(--gutter_main_sp) 0 5%;
+    font-size: var(--font_size_s);
+    font-weight: var(--font_weight_h1);
+}
+
+.contact_title,
+.check_title,
+.sent_title {
+    text-align: left;
+    border-bottom: solid 3px #C6C6C6;
+    font-size: var(--font_size_m);
+    margin-left: 20%;
+    line-height: 0.6;
+    font-weight: var(--font_weight_h2);
+}
+
+.header_nav ul {
+    padding: 0;
+    list-style: none;
+    margin: 0 var(--gutter_main_sp) calc(var(--gutter_main_sp)*2) 5%;
+}
+
+.header_nav li:first-child {
+    margin-bottom: 8px;
+}
+
+.header_nav li:nth-child(2) {
+    margin-bottom: 8px;
+}
+
+
+@media screen and (min-width:519px) {
+
+    h1 {
+        font-size: var(--font_size_m);
+    }
+
+    .contact_title,
+    .check_title,
+    .sent_title {
+        border-bottom: solid 5px #C6C6C6;
+        font-size: var(--font_size_xl);
+    }
+
+    .header_nav ul {
+        font-size: var(--font_size_s);
+    }
+
+    .header_inner {
+        margin-bottom: var(--gutter_main_pc);
+    }
+
+    /*=======min-width:519px=======*/
+}
+
+/*===============
+お問合せ
+===============*/
+
+.form_table,
+.form_table_check {
+    display: table;
+    margin: var(--gutter_main_pc) auto 0 auto;
+}
+
+.form_table dl,
+.form_table_check dl {
+    display: table-row;
+}
+
+.form_table dt,
+.form_table_check dt {
+    margin-bottom: var(--gutter_min);
+    margin-top: calc(var(--gutter_min)*2);
+}
+
+.form_table .not_magin_top dt,
+.form_table_check .not_magin_top dt {
+    margin-top: 0;
+}
+
+.form_table_check dd {
+    padding: 32px;
+    background-color: var(--sub_color);
+    color: var(--main_color);
+}
+
+
+.form_table .btn {
+    margin: 32px auto;
+    display: block;
+}
+
+/*===============
+input,textarea,btn
+===============*/
+input {
+    width: 300px;
+}
+
+.textarea {
+    width: 300px;
+    min-height: 160px;
+}
+
+.btn,
+.contact_btn {
+    width: 100%;
+    margin-top: var(--gutter_main_sp);
+    height: 64px;
+    background-color: transparent;
+    color: var(--sub_color);
+    border: none;
+    border-top: solid 3px var(--sub_color);
+    border-bottom: solid 3px var(--sub_color);
+    transition: 0.3s;
+}
+
+.btn:hover,
+.contact_btn:hover {
+    color: var(--main_color);
+    background-color: var(--sub_color);
+}
+
+.contact_inner {
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    min-height: 100vh;
+    margin-top: 0;
+}
+
+@media screen and (min-width:519px) {
+    input {
+        width: 500px;
+    }
+
+    .textarea {
+        width: 500px;
+        min-height: 200px;
+    }
+
+    /*=======min-width:519px=======*/
+}
+
+
+/*===============
+contact_check
+===============*/
+.form_table_check {
+    width: 300px;
+}
+
+.attention {
+    color: #f5ee1e;
+}
+
+@media screen and (min-width:519px) {
+
+    .form_table_check {
+        min-width: 300px;
+        width: 500px;
+    }
+
+    .form_table_check dt {
+        margin-top: calc(var(--gutter_min)*2);
+    }
+
+    .form_table_check dd {
+        margin-top: 0;
+        padding: 32px;
+        background-color: var(--sub_color);
+    }
+
+    .check_btn {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .btn:first-of-type {
+        margin-left: var(--gutter_min);
+    }
+
+    .btn:last-of-type {
+        margin-right: var(--gutter_min);
+    }
+
+
+    /*=======min-width:519px=======*/
+}
+
+/*===============
+contact_sent
+===============*/
+
+.form_table_sent p {
+    text-align: center;
+    margin: var(--gutter_main_pc);
+    color: var(--sub_color);
+    font-size: var(--font_size_s);
+}

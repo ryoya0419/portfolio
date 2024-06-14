@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+/*===============
+.header_inner
+===============*/
+
+.header_inner {
+    margin-bottom: var(--gutter_main_sp);
+}
+
+h1 {
+    text-align: left;
+    margin: var(--gutter_main_sp) var(--gutter_main_sp) 0 5%;
+    font-size: 24px;
+}
+
+.header_nav ul {
+    padding: 0;
+    list-style: none;
+    margin: 0 var(--gutter_main_sp) var(--gutter_main_pc) 5%;
+}
+
+/* .header_nav li a {
+    border-bottom: solid 10px var(--sub_color);
+    font-weight: 100;
+    line-height: 1;
+    display: inline-block;
+} */
+
+.header_nav li:first-child {
+    margin-bottom: 8px;
+}
+
+.header_nav li:nth-child(2) {
+    margin-bottom: 8px;
+}
+
+@media screen and (min-width:519px) {
+    h1 {
+        font-size: var(--font_size_m);
+    }
+
+    .header_inner {
+        margin-bottom: var(--gutter_main_pc);
+    }
+
+    .header_nav ul {
+        font-size: var(--font_size_s);
+    }
+
+
+    /* .header_nav li a {
+        animation-name: slimToBold;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes slimToBold {
+        0% {
+            border-bottom: solid 2px #C6C6C6;
+            margin-bottom: 13px;
+        }
+
+        100% {
+            border-bottom: solid 15px #C6C6C6;
+        }
+    }
+
+    .header_nav li a:hover {
+        animation-name: boldToSlim;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes boldToSlim {
+        0% {
+            border-bottom: solid 15px #C6C6C6;
+        }
+
+        100% {
+            border-bottom: solid 2px #C6C6C6;
+            margin-bottom: 13px;
+        }
+    } */
+
+    /*=======min-width:519px=======*/
+}
+
+
+/*===============
+.about_inner
+===============*/
+
+.about_title {
+    text-align: left;
+    border-bottom: solid 3px #C6C6C6;
+    font-size: var(--font_size_m);
+    margin-left: 20%;
+    line-height: 0.6;
+    font-weight: var(--font_weight_h2);
+}
+
+
+.about_inner table {
+    width: 320px;
+    margin: 0 auto var(--gutter_main_sp) auto;
+}
+
+.about_inner table th,
+.about_inner table td {
+    display: block;
+    text-align: left;
+}
+
+.about_inner table th {
+    margin-top: var(--gutter_main_sp);
+}
+
+.about_inner table th::before {
+    content: "";
+    border-right: 16px solid var(--sub_color);
+    margin-right: 4px;
+}
+
+@media screen and (min-width:519px) {
+
+    .about_title {
+        border-bottom: solid 5px var(--sub_color);
+        font-size: var(--font_size_xl);
+    }
+
+    .about_inner table {
+        width: 519px;
+        margin-top: var(--gutter_main_pc);
+        margin: var(--gutter_main_pc) auto;
+    }
+
+    .about_inner table th,
+    .about_inner table td {
+        display: inline-block;
+        margin: 0 auto calc(var(--gutter_main_pc) /2) auto;
+    }
+
+    .about_inner table th {
+        width: 100px;
+    }
+
+    .about_inner table td {
+        margin-left: var(--gutter_min);
+    }
+
+    .about_inner table th::before {
+        content: "";
+        border-right: 16px solid var(--sub_color);
+        margin-right: 4px;
+    }
+
+    /*=======min-width:519px=======*/
+}
