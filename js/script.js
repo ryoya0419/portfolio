@@ -9,6 +9,7 @@ const open_2 = document.getElementById("modal_open_2");
 const open_3 = document.getElementById("modal_open_3");
 const open_4 = document.getElementById("modal_open_4");
 const open_5 = document.getElementById("modal_open_5");
+const open_6 = document.getElementById("modal_open_6");
 
 //モーダル自体
 const modal_1 = document.getElementById("modal_1");
@@ -16,6 +17,8 @@ const modal_2 = document.getElementById("modal_2");
 const modal_3 = document.getElementById("modal_3");
 const modal_4 = document.getElementById("modal_4");
 const modal_5 = document.getElementById("modal_5");
+const modal_6 = document.getElementById("modal_6");
+
 
 //モーダルを閉じるボタン
 const close_1 = document.getElementById("close_btn_1");
@@ -23,10 +26,11 @@ const close_2 = document.getElementById("close_btn_2");
 const close_3 = document.getElementById("close_btn_3");
 const close_4 = document.getElementById("close_btn_4");
 const close_5 = document.getElementById("close_btn_5");
+const close_6 = document.getElementById("close_btn_6");
 
 
 //=================
-//モーダルを開く関数_3
+//モーダルを開く関数_1
 //=================
 function modalOpen_1() {
     modal_1.classList.add("modal_on");
@@ -130,3 +134,24 @@ function modalClose_5(e) {
     }
 }
 addEventListener("click", modalClose_5);
+
+//=================
+//モーダルを開く関数_6
+//=================
+function modalOpen_6() {
+    modal_6.classList.add("modal_on");
+}
+open_6.addEventListener("click", modalOpen_6);
+
+function modalCloseOut_6() {
+    modal_6.classList.remove("modal_on");
+}
+close_6.addEventListener("click", modalCloseOut_6);
+
+//モーダルの背景をクリックで閉じる
+function modalClose_6(e) {
+    if (e.target === modal_6) {
+        modal_6.classList.remove("modal_on");
+    }
+}
+addEventListener("click", modalClose_6);
