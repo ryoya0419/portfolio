@@ -117,23 +117,23 @@ addEventListener("click", modalClose_4);
 //=================
 //モーダルを開く関数_5
 //=================
-function modalOpen_5() {
-    modal_5.classList.add("modal_on");
-}
-open_5.addEventListener("click", modalOpen_5);
+// function modalOpen_5() {
+//     modal_5.classList.add("modal_on");
+// }
+// open_5.addEventListener("click", modalOpen_5);
 
-function modalCloseOut_5() {
-    modal_5.classList.remove("modal_on");
-}
-close_5.addEventListener("click", modalCloseOut_5);
+// function modalCloseOut_5() {
+//     modal_5.classList.remove("modal_on");
+// }
+// close_5.addEventListener("click", modalCloseOut_5);
 
-//モーダルの背景をクリックで閉じる
-function modalClose_5(e) {
-    if (e.target === modal_5) {
-        modal_5.classList.remove("modal_on");
-    }
-}
-addEventListener("click", modalClose_5);
+// //モーダルの背景をクリックで閉じる
+// function modalClose_5(e) {
+//     if (e.target === modal_5) {
+//         modal_5.classList.remove("modal_on");
+//     }
+// }
+// addEventListener("click", modalClose_5);
 
 //=================
 //モーダルを開く関数_6
